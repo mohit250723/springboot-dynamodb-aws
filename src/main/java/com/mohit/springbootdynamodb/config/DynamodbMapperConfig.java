@@ -21,7 +21,7 @@ public class DynamodbMapperConfig {
 	private AmazonDynamoDB amazonDynamoDB() {
 		return AmazonDynamoDBClientBuilder.standard().
 				withEndpointConfiguration(new AwsClientBuilder.EndpointConfiguration("dynamodb.ap-south-1.amazonaws.com","ap-south-1")).
-				withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("AKIA4MTWNVLFRUSXISW3", "Erp9lIu+Zjs14osPaILlOh8abmaCrFy6onyCQOoq"))).build();
+				withCredentials(new AWSStaticCredentialsProvider(new BasicAWSCredentials("provideAccessKey", "provideSecretKey"))).build();
 	}
 
 }
